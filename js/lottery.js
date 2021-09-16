@@ -79,8 +79,8 @@ function drawLottery(lottery_index){
 		  ctx.fillStyle = _lottery.colors[i];
 		   
 		  //创建阴影（两者同时使用） shadowBlur:阴影的模糊级数   shadowColor:阴影颜色 【注：相当耗费资源】
-		  //ctx.shadowBlur = 1;  
-		  //ctx.shadowColor = "#fff";  
+		  ctx.shadowBlur = 1;  
+		  ctx.shadowColor = "#fff";  
 		 
 		  ctx.beginPath();
 		  //arc(x,y,r,起始角,结束角,绘制方向) 方法创建弧/曲线（用于创建圆或部分圆）  
@@ -123,7 +123,8 @@ var rotateFn = function (item, angles, txt){
 			$modal.hide();
 			drawLottery(item); //中奖后改变背景颜色
 			if(item == 1||item == 3 || item == 7){
-				$popover.show().find('.m4').show();
+				$popover.show().find('.m5').show();
+				record_log(txt); //插入我的中奖纪录
 			}else{
 				$popover.show().find('.m5').show().find('font').text(txt);
 				record_log(txt); //插入我的中奖纪录
@@ -153,6 +154,7 @@ function lottery(){
 //抽奖机会次数
 function changeNum(num){
 	$lottery_num.text(num);
+	
 }
 
 //写入我的抽奖记录
