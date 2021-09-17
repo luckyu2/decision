@@ -126,7 +126,8 @@ var rotateFn = function (item, angles, txt){
 				$popover.show().find('.m5').show();
 				record_log(txt); //插入我的中奖纪录
 			}else{
-				$popover.show().find('.m5').show().find('font').text(txt);
+				//$popover.show().find('.m5').show().find('font').text(txt);
+				$popover.show().find('.m5').show();
 				record_log(txt); //插入我的中奖纪录
 			}
 			changeNum(total_num);
