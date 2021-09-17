@@ -67,7 +67,7 @@ a{text-decoration: none;color:#666;-webkit-touch-callout: none!important;}
 .lottery_records li span{display:inline-block;margin-left:8px;}
 .m3 p{font-size:1.2rem;line-height:28px;}
 .modal_btns{width:46%;height:50px;margin:25px auto auto 30%;display:inline-block;}
-#share_btn{background:url('../img/share_btn.png') no-repeat center center;background-size:100%;}
+/* #share_btn{background:url('../img/share_btn.png') no-repeat center center;background-size:100%;} */
 #come_again_btn{background:url('../img/come_again_btn.png') no-repeat center center;background-size:100%;}
 #receives_btn{background:url('../img/receives_btn.png') no-repeat center center;background-size:100%;}
 .sorry{width:60%;}
