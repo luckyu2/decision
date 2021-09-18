@@ -101,3 +101,32 @@ a{text-decoration: none;color:#666;-webkit-touch-callout: none!important;}
 .dy08{-webkit-animation-delay:.8s;}
 @-webkit-keyframes fd { from {-webkit-opacity:0;opacity:0;} to {-webkit-opacity:1;opacity:1;} }
 @-webkit-keyframes rotate { from { -webkit-transform:rotate(180deg); } to { -webkit-transform:rotate(0deg); } }
+/* 底部 */
+h2{
+    position: absolute;
+    top: 8em;
+        font-size: 1em;
+    letter-spacing: 15px;
+    color: #0e3742;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+    line-height: 0.7em;
+    outline: none;
+    animation: animate 5s linear infinite;
+  }
+  @keyframes animate{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+      color: #0e3742;
+    }
+    18.1%,20.1%,50.1%,60%,65.1%,80%,90.1%,100%{
+      color: #fff;
+      text-shadow: 0 0 10px #03bcf4,
+                  0 0 20px #03bcf4,
+                  0 0 40px #03bcf4,
+                  0 0 80px #03bcf4,
+                  0 0 160px #03bcf4;
+    }
+  }
+
+
