@@ -47,6 +47,9 @@ a{text-decoration: none;color:#666;-webkit-touch-callout: none!important;}
       width: 6em;
       height: 6em;
     }
+ .lottery img:last-child{
+      margin-left: 8.8em;
+    }
 .lottery_txt strong{color:#f25b3a;font-size:1.1rem;letter-spacing:1px;}
 #lottery_num{font-family:arial;font-size:1.3rem;}
 .lottery_txt p{color:#ffa200;font-size:.8rem;}
